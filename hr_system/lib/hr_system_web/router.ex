@@ -17,7 +17,7 @@ defmodule HrSystemWeb.Router do
   scope "/", HrSystemWeb do
     pipe_through :browser
     resources "/employees", EmployeeController
-    get "/", PageController, :home
+    resources "/", EmployeeController
   end
 
   # Other scopes may use custom stacks.
